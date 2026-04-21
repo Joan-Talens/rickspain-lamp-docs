@@ -1,0 +1,62 @@
+site_name: RickSpain - Infraestructura LAMP
+site_description: Documentació professional d'infraestructura LAMP securitzada
+site_author: RickSpain
+
+theme:
+  name: material
+  language: ca
+  logo: img/logo.png
+  favicon: img/logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.tabs.link
+    - content.action.edit
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Canvia a mode fosc
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Canvia a mode clar
+
+nav:
+  - Inici: index.md
+  - Servidors: servidors.md
+  - MySQL: mysql.md
+  - Usuaris: usuaris.md
+  - Seguretat: seguretat.md
+  - Manteniment: manteniment.md
+  - Resolució de Problemes: troubleshooting.md
+  - Glossari: glossari.md
+
+plugins:
+  - search:
+      lang: ca
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - footnotes
